@@ -28,3 +28,9 @@
 [submodule "bundle/vim-easymotion"]
 	path = bundle/vim-easymotion
 	url = https://github.com/Lokaltog/vim-easymotion.git
+[submodule "bundle/tskeleton_vim"]
+	path = bundle/tskeleton_vim
+	url = https://github.com/tomtom/tskeleton_vim.git
+[submodule "bundle/tskeletons"]
+	path = bundle/tskeletons
+	url = https://github.com/tomtom/tskeletons.git
