@@ -19,6 +19,7 @@ set showmode                    "Show current mode down the bottom
 set gcr=a:blinkon0              "Disable cursor blink
 set visualbell                  "No sounds
 set autoread                    "Reload files changed outside vim
+set title                       "Shows on the title bar, the name of the current file
 
 " This makes vim act like all other editors, buffers can
 " exist in the background without being in a window.
@@ -113,6 +114,12 @@ set scrolloff=8         "Start scrolling when we're 8 lines away from margins
 set sidescrolloff=15
 set sidescroll=1
 
+" ================ NerdTree Mappings ================
+map <C-n> :NERDTreeToggle<CR>
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+
+" ================= Conque Mappings =================
+:cabbrev Ct ConqueTermSplit bash
 
 " Termcap overrides
 "set t_ku=OA
