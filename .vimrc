@@ -126,3 +126,7 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTree
 "set t_kd=OB
 "set t_kr=OC
 "set t_kl=OD
+
+syntax enable
+set background=dark
+colorscheme solarized
