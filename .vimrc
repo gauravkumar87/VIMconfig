@@ -118,9 +118,6 @@ set sidescroll=1
 map <C-n> :NERDTreeToggle<CR>
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
-" ================= Conque Mappings =================
-:cabbrev Ct ConqueTermSplit bash
-
 " Termcap overrides
 "set t_ku=OA
 "set t_kd=OB
@@ -130,3 +127,13 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTree
 syntax enable
 set background=dark
 colorscheme solarized
+
+" =============== For Syntastic =====================
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
